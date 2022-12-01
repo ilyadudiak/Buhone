@@ -1,0 +1,135 @@
+/*review page*/
+.review-page{
+    min-height: 900px;
+    display: flex;
+}
+.review{
+    width: 1110px;
+    height: 320px;
+    background-color: var(--blue-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 80px;
+    
+}
+.review__text{
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--dark-black);
+    max-width: 920px;
+    align-self: center;
+}
+
+.user__name{
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.user__subtitle{
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: #4F4F4F;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-left: 95px;
+    max-width: 340px;
+}
+
+.user__text{
+    margin-left: 35px;
+}
+
+@media (max-width:1405px){
+    .review{
+        width: 100%;
+    }
+
+    .review__text{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+@media (max-width: 1933px){
+    .review-page .wrapper{
+        max-width: none;
+    }
+}
+
+@media (max-width: 936px){
+    .review{
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 490px){
+    .review{
+        height: 60%;
+    }
+}
+
+@media (max-width: 482px){
+    .feedback-page{
+        margin-top: 30px;
+    }
+    .review-page{
+        height: 100%;
+    }
+    .review__wrapper .control{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+        
+    }
+.review__wrapper{
+    margin-top: 20px;
+}
+    .review__wrapper .control .dots{
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .user{
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .review{
+        align-items: center;
+    }
+
+    .review__wrapper .title{
+        text-align: center;
+    }
+
+    .review__wrapper .abovetitle{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 393px){
+    .review__wrapper .title{
+        font-size: 43px;
+    }
+}
+
+
+@media (max-width: 350px){
+    .review__wrapper .title{
+        font-size: 40px;
+    }
+}

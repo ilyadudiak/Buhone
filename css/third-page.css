@@ -1,0 +1,163 @@
+/*third page*/
+
+.third-page{
+    display: flex;
+    align-items: center;
+    
+
+}
+.description{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--dark-black);
+    font-family: var(--main-font);
+    
+}
+
+.campaign__description{
+    max-width: 445px;
+    
+}
+
+.blue_title{
+    color: var(--dark-blue);
+}
+
+.campaign__items{
+    display: flex;
+    width: 28.1vw;
+    min-height: 540px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 125px;
+}
+
+.campaign__item{
+    min-height: 255px;
+    width: 255px;
+    background-color: var(--blue-gray);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.campaign__item:hover{
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+.campaign__item:hover a{
+    color: var(--white);
+}
+
+.campaign__title{
+    font-weight: 900;
+    font-size: 55px;
+    font-family: var(--main-font);
+    margin-top: 7px;
+}
+
+.campaign__subtitle{
+    font-weight: 700;
+    font-size: 14px;
+    font-family: var(--main-font);
+    max-width: 120px;
+    margin-top: 6px;
+}
+
+.campaign__link{
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 14px;
+    font-family: var(--main-font);
+    margin-top: 47px;
+}
+
+.third__wrapper{
+    display: flex;
+}
+
+.campaign__item *{
+    margin-left: 40px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mt17{
+    margin-top: 17px;
+}
+
+.mt34{
+    margin-top: 34px;
+}
+
+.mt40{
+    margin-top: 40px;
+}
+
+.mt60{
+    margin-top: 60px;
+}
+
+@media (max-width: 920px){
+    .third__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .campaign__description{
+        max-width: 70%;
+        padding-bottom: 20px;
+    }
+
+    .campaign__text{
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .campaign__item{
+        width: 87%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .campaign__items{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .campaign__item *{
+        margin-left: 0;
+    }
+
+}
+
+
+
+@media (max-width: 356px){
+    .campaign__text .title{
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 1851px){
+    .campaign__item{
+        margin-top: 30px;
+    }
+
+    .campaign__item:first-child{
+        margin-top: 20px;
+    }
+
+    .campaign__item:last-child{
+        margin-bottom: 20px;
+    }
+
+
+}

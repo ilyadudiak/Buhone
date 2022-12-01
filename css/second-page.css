@@ -1,0 +1,129 @@
+/*second page*/
+.sec-page{
+    background-color: var(--blue-gray);
+    min-height: 1242px;
+    
+}
+
+.abovetitle{
+    color: var(--gray);
+    font-weight: 900;
+    font-family: var(--main-font);
+    font-size: 24px;
+    line-height: 33px;
+    
+}
+
+.mt140{
+    margin-top: 140px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.title{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    font-family: var(--sec-font);
+    color: var(--light-black);
+    
+
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 102px;
+}
+
+.service__item{
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    min-height: 360px;
+    max-width: 350px;
+    background: url(../img/services__img.svg);
+    background-position: center center;
+    
+   
+}
+
+.service__item:hover{
+    background: linear-gradient(0deg, rgba(0, 95, 163, 0.65), rgba(0, 95, 163, 0.65)), url(../img/services__img.svg);
+    
+}
+
+
+.service__text{
+    color: var(--white);
+    font-weight: 900;
+    font-size: 24px;
+    font-family: var(--main-font);
+    margin-left: 45px;
+    margin-bottom: 45px;
+}
+
+.mt30{
+    margin-top: 30px;
+}
+@media (max-width: 1801px){
+    .mt-30_1{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:1201px){
+    .sec-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .services{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1115px){
+    .mt-30_2{
+        margin-top: 30px;
+    }
+    .services{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service__item{
+        width: 100vw;
+        background-size: cover;
+    }
+    .service__item:last-child{
+        margin-bottom: 10px;
+    }
+
+    .sec-wrapper .abovetitle{
+        text-align: center;
+    }
+}
+@media (max-width: 648px){
+    .sec-wrapper .title{
+        font-size: 34px;
+    }
+}
+
+
+@media (max-width: 462px){
+    .sec-wrapper .title{
+        font-size: 7.247vw;
+    }
+}
+
+@media (max-width: 472px){
+    .service__item{
+       margin-right: 53px;
+       width: 75vw;
+    }
+}
+
+
